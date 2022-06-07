@@ -18,6 +18,14 @@ apt update -y && apt upgrade -y && \
 apt install fish && \
 fish
 ```
+
+### Setting fish
+```
+vim ~/.config/fish/config.fish
+```
+```
+set -g -x PATH /usr/local/bin $PATH
+```
 ### Install curl, nvm, node, git, tmux, spaceVim, rust
 ```
 cd && \
