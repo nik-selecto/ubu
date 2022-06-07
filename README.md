@@ -16,7 +16,10 @@ env TERM=xterm-256color script -q -c "/bin/bash" /dev/null
 cd && \
 apt update -y && apt upgrade -y && \
 apt install fish && \
-fish && \
+fish
+```
+```
+cd && \
 apt install curl -y && \
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher && \
 fisher install jorgebucaran/nvm.fish && \
