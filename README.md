@@ -11,13 +11,14 @@ env TERM=xterm-256color script -q -c "/bin/bash" /dev/null
 > docker exec -it ubu env TERM=xterm-256color script -q -c "/bin/bash" /dev/null
 > ```
 
-### Install fish-shell, curl, fisher, nvm, node, 
+### Install fish-shell, curl, fisher 
 ```
 cd && \
 apt update -y && apt upgrade -y && \
 apt install fish && \
 fish
 ```
+### Install curl, nvm, node, git, tmux, spaceVim, rust
 ```
 cd && \
 apt install curl -y && \
@@ -28,5 +29,6 @@ apt install tmux -y && \
 apt install git -y && \
 git clone https://github.com/gpakosz/.tmux.git && ln -s -f .tmux/.tmux.conf && cp .tmux/.tmux.conf.local . && \
 apt install vim-athena -y && \
-curl -sLf https://spacevim.org/install.sh | bash
+curl -sLf https://spacevim.org/install.sh | bash && \
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
