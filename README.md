@@ -11,7 +11,7 @@ env TERM=xterm-256color script -q -c "/bin/bash" /dev/null
 > docker exec -it ubu env TERM=xterm-256color script -q -c "/bin/bash" /dev/null
 > ```
 
-### Install fish-shell, curl, fisher 
+### Install *
 ```
 cd && \
 apt update -y && apt upgrade -y && \
