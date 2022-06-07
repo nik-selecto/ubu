@@ -18,7 +18,7 @@ apt update -y && apt upgrade -y && \
 apt install curl -y && \
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash && \
 source ~/.profile && \
-nvm install lts && \
+nvm install 16 && \
 apt install tmux -y && \
 apt install git -y && \
 git clone https://github.com/gpakosz/.tmux.git && ln -s -f .tmux/.tmux.conf && cp .tmux/.tmux.conf.local . && \
